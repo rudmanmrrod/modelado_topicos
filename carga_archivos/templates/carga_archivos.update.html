@@ -1,0 +1,8 @@
+{% extends 'carga_archivos.base.html' %}
+{% block header_title %}
+    Agregar Archivos
+{% endblock %}
+{% block extra_buttons %}
+    <a class="btn btn-default" href="{% url 'carga_archivos_list'%}">Regresar</a>
+    <button type="submit" class="btn btn-success">Agregar</button>
+{% endblock %}

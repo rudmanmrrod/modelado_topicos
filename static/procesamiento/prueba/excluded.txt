@@ -1,0 +1,7 @@
+darle_a_conocer (propesta_5.txt)
+formen_parte (propesta_4.txt)
+hace_referencia (propesta_10.txt)
+forma_parte (propesta_6.txt)
+poner_en_funcionamiento (propesta_7.txt)
+pone_de_relieve (propesta_2.txt)
+poner_en_funcionamiento (propesta_2.txt)

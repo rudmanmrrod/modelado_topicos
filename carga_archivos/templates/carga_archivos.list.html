@@ -1,0 +1,26 @@
+{% extends 'procesamiento.base.template.html' %}
+{% load staticfiles %}
+{% block title %} Ver Archivos {% endblock %}
+{% block content %}
+    <h1 class="text-center">Ver Archivos Cargados</h1><hr>
+    {% for carga in object_list %}
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul>
+                    <li><b>Nombre de del Directorio: </b>{{ carga.carga_dir }}</li>
+                    <li><b>Archivos: </b>{{ carga.directorios}}</li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <a type="button" class="btn btn-primary" href="{% url 'carga_archivos_update' carga.pk %}"> Agregar + Archivos </a>
+                <a type="button" class="btn btn-danger" href="{% url 'carga_archivos_delete' carga.pk %}"> Eliminar</a>
+            </div>
+        </div>
+    {% empty %}
+        <h3>No se han cargado archivos.</h3>
+    {% endfor %}
+    {% if object_list %}
+        {% include 'base.paginator.html' with paginator=page_obj %}
+    {% endif %}
+{% endblock %}
+

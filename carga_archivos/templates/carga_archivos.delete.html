@@ -1,0 +1,12 @@
+{% extends 'procesamiento.base.template.html' %}
+{% load staticfiles %}
+{% block title %} Eliminar Archivos {% endblock %}
+{% block contenido %}
+    <h1>Eliminar Archivos</h1><hr>
+    <form method="post">
+        {% csrf_token %}
+        <p>Si en realidad deseas borrar todos estos archivos da click en:</p>
+        <button type="submit" class="btn btn-danger"/>Borrar </button>
+    </form><br>
+    <a type="button" class="btn btn-default" href="{% url 'carga_archivos_list' %}"> Regresar </a>
+{% endblock %}

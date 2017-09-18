@@ -1,0 +1,38 @@
+***descripcion: diseño desarrollo e implantación de un sistema informático  que permita tener el control de las actividades que sean de interés nacional.
+este sistema consiste en crear una gran bases de datos que cubra la totalidad de la población venezolana.
+esto se lograría muy fácil y sin invertir tantos recurso esto gracias a la gran organización de nuestro pueblo hoy en día en venezuela cuenta según cifras del gobierno con unos 50.000 consejos comunales repartidos en unas 1.200 parroquias, en unos 330 municipios y 24 estados. teniendo en cuenta que dentro d esta estructura se encuentran los 50.000 consejos comunales esto nos da una gran oportunidad ya que lo único que tenemos que hacer es ubicar al personal del consejo comunal y les pedimos que nos hagan un censo en su comunidad algo que no es tan difícil ya que en el ámbito de un consejo comunal el máximo es de unas 400 familias. 
+unas ves logrado el censo en los 50.000 consejos comunales solo nos quedaría cargarlos al sistema  de esta manera ya contaríamos con al menos  50.000 ojos en todo el país (aliados incondicionales) es importante resaltar que cada espacio geográfico donde se encuentra el consejo comunal será registrado (cargado al sistema) utilizando una fotografía satelital  tomada desde el satélite miranda. en ese momento ya tendremos la ubicación exacta de ese consejo comunal.
+que podemos hacer con este sistema: 
+el mismo nos permitirá actuar de manera eficiente en las siguientes políticas:
+1     seguridad ciudadana
+2	control de obras publicas 
+3	control de desastres naturales en el caso que ocurrieran
+4	desarrollo del país 
+5	seguridad y defensa de la nación. entre otros
+como nos ayudaría con la seguridad ciudadana:
+dijimos que existen 50.000 consejos comunales por tanto el 100x% de las personas que cometen crímenes viven dentro de esos consejos comunales. ¿que hay que hacer? ¿quiénes son los delincuentes del futuro? el sistema puede predecir quienes son los posibles delincuentes que debemos hacer evitar que lleguen a convertirse en delincuentes. como  mi propuesta es si tenemos 50.000 consejos comunales 2 policías por cada consejo comunal como deben ser estos policías deben estar formados como psicólogos por que la responsabilidad que deben cumplir en el barrio es la de cuidar a los niños y adolecentes para que no se metan a balandros ya que los que vivimos en el barrio sabemos que el peligro esta es en los niños de 10 a 17 ese es el periodo en que los muchachos agarran malas mañas.  
+una vez que se aplique esta política se acaba la delincuencia por que si no hay niños sin rumbo. de donde van a salir los maleantes. recodemos que en todos los barrios los que se meten a balandro solo duran cuando mucho 4 años lo que quiere decir que en 4 años no hay remplazo se acabaron. 
+esto es una explicación mínima de lo que podemos lograr con la implantación de un sistema como este lo demás solo avísenme y lo ponemos en practica no estoy vendiendo nada solo es mi aporte. yo puedo solucionar muchos problemas dense la oportunidad.
+atentamente:
+mario martinez  estudiante de ing de sistemas unefa guacara 
+tlf: 0416.733.0700
+
+
+
+ ***justificacion: que podemos hacer con este sistema: 
+el mismo nos permitirá actuar de manera eficiente en las siguientes políticas:
+1     seguridad ciudadana
+2	control de obras publicas 
+3	control de desastres naturales en el caso que ocurrieran
+4	desarrollo del país 
+5	seguridad y defensa de la nación. entre otros
+como nos ayudaría con la seguridad ciudadana:
+dijimos que existen 50.000 consejos comunales por tanto el 100x% de las personas que cometen crímenes viven dentro de esos consejos comunales. ¿que hay que hacer? ¿quiénes son los delincuentes del futuro? el sistema puede predecir quienes son los posibles delincuentes que debemos hacer evitar que lleguen a convertirse en delincuentes. como  mi propuesta es si tenemos 50.000 consejos comunales 2 policías por cada consejo comunal como deben ser estos policías deben estar formados como psicólogos por que la responsabilidad que deben cumplir en el barrio es la de cuidar a los niños y adolecentes para que no se metan a balandros ya que los que vivimos en el barrio sabemos que el peligro esta es en los niños de 10 a 17 ese es el periodo en que los muchachos agarran malas mañas.  
+una vez que se aplique esta política se acaba la delincuencia por que si no hay niños sin rumbo. de donde van a salir los maleantes. recodemos que en todos los barrios los que se meten a balandro solo duran cuando mucho 4 años lo que quiere decir que en 4 años no hay remplazo se acabaron. 
+esto es una explicación mínima de lo que podemos lograr con la implantación de un sistema como este lo demás solo avísenme y lo ponemos en practica no estoy vendiendo nada solo es mi aporte. yo puedo solucionar muchos problemas dense la oportunidad.
+atentamente:
+mario martinez  estudiante de ing de sistemas unefa guacara 
+tlf: 0416.733.0700
+
+
+

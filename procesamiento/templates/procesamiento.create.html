@@ -1,0 +1,43 @@
+{% extends 'procesamiento.base.template.html' %}
+{% load staticfiles %}
+{% block title %} Crear Procesamiento {% endblock %}
+{% block contenido %}
+    <div class="container">
+        <h1 class="text-center">Crear Perfil de Procesamiento</h1><hr>
+        <form action="" role="form" class="form form-horizontal validate-form" method="post" autocomplete="off">
+            {% csrf_token %}
+            {% for item in form %}
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group {% if item.errors %}has-error{% endif %}">
+                            <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.consultas.auto_id }}">
+                                {{ item.label }}
+                            </label>
+                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                {{ item }}
+                                {% include 'base.forms.errors.html' with form_errors=item.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="col-md-4 col-xs-4 col-sm-4">
+                <a type="button" class="btn btn-default" href="{% url 'procesamiento_select' %}">Regresar</a>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+                <button type="submit" class="btn btn-success pull-center">Crear</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+{% block extraJs %}
+    <script>
+        $('form').on('keyup keypress', function(e) {
+          var keyCode = e.keyCode || e.which;
+          if (keyCode === 13) { 
+            e.preventDefault();
+            return false;
+          }
+        });
+    </script>
+{% endblock %}

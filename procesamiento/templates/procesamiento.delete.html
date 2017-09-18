@@ -1,0 +1,12 @@
+{% extends 'procesamiento.base.template.html' %}
+{% load staticfiles %}
+{% block title %} Eliminar Procesamiento {% endblock %}
+{% block contenido %}
+    <h1>Borrar Procesamiento</h1><hr>
+    <form method="post">
+        {% csrf_token %}
+        <p>Si en realidad deseas borrar este registro da click en:</p>
+        <button type="submit" class="btn btn-danger"/>Borrar </button>
+    </form><br>
+    <a type="button" class="btn btn-default" href="{% url 'procesamiento_index' %}"> Regresar </a>
+{% endblock %}

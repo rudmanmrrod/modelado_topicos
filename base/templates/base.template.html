@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>{% block title %}Sistema de Modelado de Tópicos{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static "plugins/bootstrap/css/bootstrap.min.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "plugins/bootstrap_admin_theme/css/styles.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "plugins/tags_input/bootstrap-tagsinput.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "plugins/bootstrap-fileinput/fileinput.min.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}"/>
+        
+        <script src="{% static "plugins/jquery/jquery-3.1.0.min.js" %}"></script>
+        <script src="{% static "plugins/bootstrap/js/bootstrap.min.js" %}"></script>
+        <script src="{% static "plugins/bootbox/bootbox.min.js" %}"></script>
+        <script src="{% static "plugins/tags_input/bootstrap-tagsinput.js" %}"></script>
+        <script src="{% static "plugins/bootstrap-fileinput/fileinput.min.js" %}"></script>
+        <script src="{% static "plugins/bootstrap-fileinput/locales/es.js" %}"></script>
+        <script src="{% static "js/funciones.js" %}"></script>
+        {% block headScript %}{%endblock%}
+    </head>
+    <body>
+        {% include 'base.navbar.html' %}
+        <div class="page-content">
+            <div class="row">
+            {% block superContent%}
+                    {% if request.user.is_authenticated %}
+                        <div class="col-md-2">
+                            {% include 'base.lateral.menu.html' %}                        
+                        </div>
+                        <div class="col-md-10">
+                    {% else %}
+                        <div class="container">
+                    {% endif %}
+                        {% block content %}{% endblock %}
+                    </div>
+            {% endblock %}
+            </div>
+        </div>
+        {% block modals %}{% endblock %}
+        {% include 'base.footer.html' %}
+    </body>
+    {% block extraJs %}{%endblock%}
+    <script>
+        $(".submenu > a").click(function(e) {
+            e.preventDefault();
+            var $li = $(this).parent("li");
+            var $ul = $(this).next("ul");
+        
+            if($li.hasClass("open")) {
+              $ul.slideUp(350);
+              $li.removeClass("open");
+            } else {
+              $(".nav > li > ul").slideUp(350);
+              $(".nav > li").removeClass("open");
+              $ul.slideDown(350);
+              $li.addClass("open");
+            }
+      });
+    </script>
+
+    {% include 'base.alert.messages.html' %}
+    {% include 'base.vars.javascript.html' %}
+</html>

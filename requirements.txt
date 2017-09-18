@@ -1,0 +1,10 @@
+Django==1.11.4
+Unidecode==0.04.21
+brewer2mpl==1.4.1
+chardet==3.0.4
+nltk==3.2.4
+numpy==1.13.1
+progressbar==2.3
+pytz==2017.2
+scipy==0.19.1
+six==1.10.0

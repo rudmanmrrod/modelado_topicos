@@ -1,0 +1,41 @@
+{% extends 'procesamiento.base.template.html' %}
+{% load staticfiles %}
+{% block title %} Cargar Archivos {% endblock %}
+{% block content %}
+    <div class="content row" id="content">
+        <h1 class="text-center">{% block header_title %}{% endblock %}</h1><hr/>
+        <form action="" role="form" class="form form-horizontal validate-form" method="post" autocomplete="off" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for item in form %}
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group {% if item.errors %}has-error{% endif %}">
+                            <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.consultas.auto_id }}">
+                                {{ item.label }}
+                            </label>
+                            <div class="col-md-4 col-xs-4 col-sm-4">
+                                {{ item }}
+                                {% include 'base.forms.errors.html' with form_errors=item.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="text-center">
+                {% block extra_buttons %}
+                    <button type="submit" class="btn btn-success">{% block submit_button %}{% endblock %}</button>
+                {% endblock %}
+            </div>
+        </form>
+        {% block extra_content %}{% endblock %}
+    </div>
+{% endblock %}
+{% block extraJs %}
+<script>
+    $('.file').fileinput({
+        language: 'es',
+        showUpload: false,
+        allowedFileExtensions: ['txt']
+    });
+</script>
+{% endblock %}

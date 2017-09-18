@@ -1,0 +1,30 @@
+{% extends 'procesamiento.base.template.html' %}
+{% load staticfiles %}
+{% block title %}Procesamientos{% endblock %}
+{% block contenido %}
+    <h1 class="text-center">Perfiles de Procesamiento</h1><hr>
+    {% for procesamiento in object_list %}
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul>
+                    <li><b>Nombre del Perfil Procesamiento: </b>{{ procesamiento.nombre }}</li>
+                    <li><b>Palabras: </b>{{ procesamiento.words }}</li>
+                    <li><b>Palabras Excluidas: </b>{{ procesamiento.excluded_words }}</li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <a type="button" class="btn btn-default" href="{% url 'procesamiento_select' %}"> Regresar</a>
+                <a type="button" class="btn btn-primary" href="{% url 'procesamiento_update' procesamiento.id %}"> Editar</a>
+                <a type="button" class="btn btn-danger" href="{% url 'procesamiento_delete' procesamiento.id %}"> Eliminar</a>
+                {% if procesamiento.used %}
+                    <a type="button" class="btn btn-info" href="{% url 'list_topic' procesamiento.id %}" target="_blank"><i class="glyphicon glyphicon-eye-open"></i> Ver Resultados</a>
+                {% endif %}
+            </div>
+        </div>
+    {% empty %}
+        <h3>No existen perfiles de procesamiento.</h3>
+    {% endfor %}
+    {% if object_list %}
+        {% include 'base.paginator.html' with paginator=page_obj %}
+    {% endif %}
+{% endblock %}

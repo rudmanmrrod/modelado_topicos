@@ -1,0 +1,140 @@
+{% extends 'consulta.base.html' %}
+{% load staticfiles %}
+{% block title %}Perfil{% endblock %}
+{% block contenido %}
+    <form action="" role="form" class="form form-horizontal validate-form" method="post" autocomplete="off">
+        {% csrf_token %}
+        <div class="row text-center">
+            <h1>Actualizar Perfil</h1><hr>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group {% if form.cedula.errors %}has-error{% endif %}">
+                    <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.cedula.auto_id }}">
+                        {{ form.cedula.label }}
+                    </label>
+                    <div class="col-md-4 col-xs-4 col-sm-4">
+                      <div class="form-inline">
+                        {{ form.cedula }}
+                      </div>
+                        {% include 'base.forms.errors.html' with form_errors=form.cedula.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                    </div>
+                    <div class="col-sm-1"><i class="ion ion-ios-medical item-requerido"></i></div>
+                </div>
+            </div><br><br><br>
+            
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="form-group {% if form.estado.errors %}has-error{% endif %}">
+                    <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.estado.auto_id }}">
+                        {{ form.estado.label }}
+                    </label>
+                    <div class="col-md-5 col-xs-5 col-sm-5">
+                        {{ form.estado }}
+                        {% include 'base.forms.errors.html' with form_errors=form.estado.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="form-group {% if form.municipio.errors %}has-error{% endif %}">
+                    <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.municipio.auto_id }}">
+                        {{ form.municipio.label }}
+                    </label>
+                    <div class="col-md-5 col-xs-5 col-sm-5">
+                        {{ form.municipio }}
+                        {% include 'base.forms.errors.html' with form_errors=form.municipio.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="form-group {% if form.parroquia.errors %}has-error{% endif %}">
+                    <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.parroquia.auto_id }}">
+                        {{ form.parroquia.label }}
+                    </label>
+                    <div class="col-md-5 col-xs-5 col-sm-5">
+                        {{ form.parroquia }}
+                        {% include 'base.forms.errors.html' with form_errors=form.parroquia.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                    </div>
+                </div>
+            </div><br><br><br>
+            
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group {% if form.sector.errors %}has-error{% endif %}">
+                  <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.sector.auto_id }}">
+                    {{ form.sector.label }}
+                  </label>
+                  <div class="col-md-4 col-xs-4 col-sm-4">
+                    {{ form.sector }}
+                    {% include 'base.forms.errors.html' with form_errors=form.sector.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                  </div>
+                  <div class="col-sm-1"><i class="ion ion-ios-medical item-requerido"></i></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-6" id="sector_trabajador" style="display: none;">
+                <div class="form-group {% if form.sector_trabajador.errors %}has-error{% endif %}">
+                  <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.sector_trabajador.auto_id }}">
+                    {{ form.sector_trabajador.label }}
+                  </label>
+                  <div class="col-md-4 col-xs-4 col-sm-4">
+                    {{ form.sector_trabajador }}
+                    {% include 'base.forms.errors.html' with form_errors=form.sector_trabajador.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                  </div>
+                  <div class="col-sm-1"><i class="ion ion-ios-medical item-requerido"></i></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-6" id="sector_estudiante" style="display: none;" >
+                <div class="form-group {% if form.sector_estudiante.errors %}has-error{% endif %}">
+                  <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.sector_estudiante.auto_id }}">
+                    {{ form.sector_estudiante.label }}
+                  </label>
+                  <div class="col-md-4 col-xs-4 col-sm-4">
+                    {{ form.sector_estudiante }}
+                    {% include 'base.forms.errors.html' with form_errors=form.sector_estudiante.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                  </div>
+                  <div class="col-sm-1"><i class="ion ion-ios-medical item-requerido"></i></div>
+                </div>
+              </div>
+              <br><br><br>
+              
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group {% if form.participacion.errors %}has-error{% endif %}">
+                  <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.participacion.auto_id }}">
+                    {{ form.participacion.label }}
+                  </label>
+                  <div class="col-md-4 col-xs-4 col-sm-4">
+                    {{ form.participacion }}
+                    {% include 'base.forms.errors.html' with form_errors=form.participacion.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                  </div>
+                  <div class="col-sm-1"><i class="ion ion-ios-medical item-requerido"></i></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group {% if form.colectivo.errors %}has-error{% endif %}">
+                  <label class="col-md-3 col-xs-3 col-sm-3 control-label" for="{{ form.colectivo.auto_id }}">
+                    {{ form.colectivo.label }}
+                  </label>
+                  <div class="col-md-4 col-xs-4 col-sm-4">
+                    {{ form.colectivo }}
+                    {% include 'base.forms.errors.html' with form_errors=form.colectivo.errors col_title_error='col-sm-2' col_msg_error='col-sm-10' %}
+                  </div>
+                  <div class="col-sm-1"><i class="ion ion-ios-medical item-requerido"></i></div>
+                </div>
+              </div><br><br><br>
+      
+             <div class="col-md-12 col-sm-12 col-xs-12">
+                 <a type="button" class="btn btn-warning pull-left" href="{% url 'consulta_index' %}">Regresar</a>
+                <button type="submit" class="btn btn-red pull-right">Actualizar</button>
+             </div>
+        </div>
+    </form>
+{% endblock %}
+{% block extraJs %}
+<script>
+  $(document).ready(function(){
+    mostrar_sector($('#id_sector').val());
+    habilitar_colectivo($('#id_participacion').val());
+  });
+</script>
+{% endblock %}
