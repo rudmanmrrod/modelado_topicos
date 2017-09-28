@@ -45,7 +45,7 @@ class ProcesamientoSelect(LoginRequiredMixin,FormView):
     Clase que gestiona la vista principal de las opciones del procesamiento
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 28-03-2017
     @version 1.0.0
     """
@@ -194,7 +194,7 @@ class ProcesamientoCreate(LoginRequiredMixin,SuccessMessageMixin,CreateView):
     Clase que gestiona la creación de perfiles procesamiento
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 28-03-2017
     @version 1.0.0
     """
@@ -247,7 +247,7 @@ class ProcesamientoList(LoginRequiredMixin,ListView):
     Clase que gestiona la lista de los perfiles procesamiento
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 28-03-2017
     @version 1.0.0
     """
@@ -286,7 +286,7 @@ class ProcesamientoDelete(LoginRequiredMixin,SuccessMessageMixin,DeleteView):
     Clase que gestiona la borrado de perfiles de procesamiento
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 28-03-2017
     @version 1.0.0
     """
@@ -301,7 +301,7 @@ class ProcesamientoUpdate(LoginRequiredMixin,SuccessMessageMixin,UpdateView):
     Clase que gestiona la actualización de perfiles de procesamiento
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 28-03-2017
     @version 1.0.0
     """
@@ -344,7 +344,7 @@ def validar_procesamiento(request,pk):
     Función que permite validar el procesamiento vía ajax
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 18-09-2017
     @param pk {int} Recibe id del perfil de procesamiento
     @return Retorna la respuesta en Json

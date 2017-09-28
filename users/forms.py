@@ -30,7 +30,7 @@ class UserRegisterForm(UserCreationForm):
     Formulario de Registro
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 23-08-2017
     @version 1.0.0
     """
@@ -56,7 +56,7 @@ class LoginForm(AuthenticationForm):
     Formulario de Logeo
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 23-08-2017
     @version 1.0.0
     """
@@ -89,7 +89,7 @@ class PasswordResetForm(PasswordResetForm):
     Clase del formulario de resetear contraseña
 
     @author Ing. Leonel P. Hernandez M. (lhernandez at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 02-05-2017
     @version 1.0.0
     """
@@ -117,7 +117,7 @@ class PasswordConfirmForm(SetPasswordForm):
     Formulario para confirmar la constraseña
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 15-05-2017
     @version 1.0.0
     """

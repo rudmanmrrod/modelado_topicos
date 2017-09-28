@@ -39,7 +39,7 @@ class CreateCargaArchivos(SuccessMessageMixin, LoginRequiredMixin, CreateView ):
     Clase que gestiona la creación y carga de archivos
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 25-08-2017
     @version 1.0.0
     """
@@ -85,7 +85,7 @@ class ListCargaArchivos(LoginRequiredMixin,ListView):
     Clase que gestiona la lista de los archivos cargados
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 05-09-2017
     @version 1.0.0
     """
@@ -126,7 +126,7 @@ class UpdateCargaArchivos(SuccessMessageMixin, LoginRequiredMixin, UpdateView ):
     Clase que gestiona la creación y carga de archivos
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 05-09-2017
     @version 1.0.0
     """

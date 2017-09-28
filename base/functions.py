@@ -23,7 +23,7 @@ def cargar_procesamiento(pk=None):
     Función que permite cargar los procesamientos
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 28-03-2017
     @return Devuelve una tupla con los perfiles de procesamiento
     """
@@ -44,7 +44,7 @@ def cargar_archivos(pk=None):
     Función que permite cargar las intancias de carga que haya realizado un usuario
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 25-08-2017
     @return Devuelve una tupla con los perfiles de procesamiento
     """
@@ -122,7 +122,7 @@ def validate_dir(pk):
     Función que permite cargar las consultas con directorios creados
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 17-04-2017
     @param pk {int} Recibe id de la consulta
     @return Devuelve una tupla con las consultas que tienen directorios
@@ -161,7 +161,7 @@ def validar_directorio_procesamiento(pk):
     Función que permite validar si ya se ejecutó el procesamiento
 
     @author Rodrigo Boet (rboet at cenditel.gob.ve)
-    @copyright <a href='http://www.gnu.org/licenses/gpl-2.0.html'>GNU Public License versión 2 (GPLv2)</a>
+    @copyright <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU Public License versión 3 (GPLv3)</a>
     @date 18-09-2017
     @param pk {int} Recibe id del perfil de procesamiento
     @return Devuelve un booleano
